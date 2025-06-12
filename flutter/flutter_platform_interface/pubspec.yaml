@@ -5,10 +5,10 @@ issue_tracker: https://github.com/srmkliveforks/ffmpeg-kit/issues
 homepage: https://github.com/srmkliveforks/ffmpeg-kit
 # NOTE: We strongly prefer non-breaking changes, even at the expense of a
 # less-clean API. See https://flutter.dev/go/platform-interface-breaking-changes
-version: 0.2.1
+version: 1.0.0
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.12.0 <4.0.0"
   flutter: ">=2.0.0"
 
 dependencies:
