@@ -26,7 +26,7 @@ import 'package:flutter/services.dart';
 import 'ffmpeg_kit_flutter_platform_interface.dart';
 
 const MethodChannel _channel =
-    const MethodChannel('flutter.arthenica.com/ffmpeg_kit');
+    const MethodChannel('flutter.srmkliveforks.com/ffmpeg_kit');
 
 /// An implementation of [FFmpegKitPlatform] that uses method channels.
 class MethodChannelFFmpegKit extends FFmpegKitPlatform {
