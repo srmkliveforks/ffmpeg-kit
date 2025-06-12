@@ -13,7 +13,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.arthenica.ffmpegkit.flutter
+        package: com.srmkliveforks.ffmpegkit.flutter
         pluginClass: FFmpegKitFlutterPlugin
       ios:
         pluginClass: FFmpegKitFlutterPlugin
