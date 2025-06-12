@@ -3,7 +3,7 @@ description: FFmpeg Kit for Flutter. Supports Android, iOS and macOS platforms.
 repository: https://github.com/srmkliveforks/ffmpeg-kit
 issue_tracker: https://github.com/srmkliveforks/ffmpeg-kit/issues
 homepage: https://github.com/srmkliveforks/ffmpeg-kit
-version: 6.0.4
+version: 1.0.0
 
 environment:
   sdk: ">=2.12.0 <4.0.0"
