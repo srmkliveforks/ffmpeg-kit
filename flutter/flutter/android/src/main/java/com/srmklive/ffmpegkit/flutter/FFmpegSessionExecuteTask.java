@@ -17,12 +17,12 @@
  * along with FFmpegKit.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.srmkliveforks.ffmpegkit.flutter;
+package com.srmklive.ffmpegkit.flutter;
 
 import androidx.annotation.NonNull;
 
-import com.srmkliveforks.ffmpegkit.FFmpegKitConfig;
-import com.srmkliveforks.ffmpegkit.FFmpegSession;
+import com.srmklive.ffmpegkit.FFmpegKitConfig;
+import com.srmklive.ffmpegkit.FFmpegSession;
 
 import io.flutter.plugin.common.MethodChannel;
 

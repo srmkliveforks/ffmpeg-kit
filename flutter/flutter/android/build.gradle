@@ -21,7 +21,7 @@ apply plugin: 'com.android.library'
 android {
     // Conditional for compatibility with AGP <4.2.
     if (project.android.hasProperty("namespace")) {
-        namespace 'com.srmkliveforks.ffmpegkit.flutter'
+        namespace 'com.srmklive.ffmpegkit.flutter'
     }
 
     compileSdkVersion 33
@@ -49,5 +49,5 @@ android {
 
 dependencies {
     implementation 'androidx.annotation:annotation:1.5.0'
-    implementation 'com.srmkliveforks:ffmpeg-kit-https:6.0.2'
+    implementation 'com.srmklive:ffmpeg-kit-https:6.0.2'
 }

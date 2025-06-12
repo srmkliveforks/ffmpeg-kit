@@ -17,31 +17,29 @@
  * along with FFmpegKit.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.srmkliveforks.ffmpegkit.flutter;
+package com.srmklive.ffmpegkit.flutter;
 
 import androidx.annotation.NonNull;
 
-import com.srmkliveforks.ffmpegkit.FFmpegKitConfig;
-import com.srmkliveforks.ffmpegkit.MediaInformationSession;
+import com.srmklive.ffmpegkit.FFmpegKitConfig;
+import com.srmklive.ffmpegkit.FFprobeSession;
 
 import io.flutter.plugin.common.MethodChannel;
 
-public class MediaInformationSessionExecuteTask implements Runnable {
-    private final MediaInformationSession mediaInformationSession;
-    private final int timeout;
+public class FFprobeSessionExecuteTask implements Runnable {
+    private final FFprobeSession ffprobeSession;
     private final FFmpegKitFlutterMethodResultHandler resultHandler;
     private final MethodChannel.Result result;
 
-    public MediaInformationSessionExecuteTask(@NonNull final MediaInformationSession mediaInformationSession, final int timeout, @NonNull final FFmpegKitFlutterMethodResultHandler resultHandler, @NonNull final MethodChannel.Result result) {
-        this.mediaInformationSession = mediaInformationSession;
-        this.timeout = timeout;
+    public FFprobeSessionExecuteTask(@NonNull final FFprobeSession ffprobeSession, @NonNull final FFmpegKitFlutterMethodResultHandler resultHandler, @NonNull final MethodChannel.Result result) {
+        this.ffprobeSession = ffprobeSession;
         this.resultHandler = resultHandler;
         this.result = result;
     }
 
     @Override
     public void run() {
-        FFmpegKitConfig.getMediaInformationExecute(mediaInformationSession, timeout);
+        FFmpegKitConfig.ffprobeExecute(ffprobeSession);
         resultHandler.successAsync(result, null);
     }
 }

@@ -17,9 +17,9 @@
  * along with FFmpegKit.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.srmkliveforks.ffmpegkit.flutter;
+package com.srmklive.ffmpegkit.flutter;
 
-import static com.srmkliveforks.ffmpegkit.flutter.FFmpegKitFlutterPlugin.LIBRARY_NAME;
+import static com.srmklive.ffmpegkit.flutter.FFmpegKitFlutterPlugin.LIBRARY_NAME;
 
 import android.os.Handler;
 import android.os.Looper;
